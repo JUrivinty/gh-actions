@@ -1,0 +1,17 @@
+name: my first workflow
+
+on: push
+
+jobs:
+    first_job: 
+        runs-on: ubuntu-latest
+        steps:
+        - name: welcome message
+          run: echo "welcome to my first gh-job"
+
+        - name: list files
+          run: ls -a
+
+        - name: read files
+          run: cat README.md
+          
