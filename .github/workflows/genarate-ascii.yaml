@@ -8,18 +8,9 @@ jobs:
         steps:
         - name: Checkout Repo
           uses: actions/checkout@v4
-
-        - name: Install Cowsay Program
-          run: sudo apt-get install cowsay -y
-
-        - name: Execute cowsay CMD
-          run: cowsay -f elephant "This is Jagadeesh Urivinty-DevOps" >> dragon.txt
-
-        - name: Test File Exists
-          run : grep -i "DevOps" dragon.txt
-
-        - name: Read File
-          run: cat dragon.txt
-
+        
         - name: List Repo files
           run : ls -ltra
+
+        - name: Executing Shell Script
+          run: ./ascii.sh
