@@ -8,8 +8,10 @@ jobs:
         steps:
         - name: Checkout Repo
           uses: actions/checkout@v4
-        - name: welcome message
+        - name: List and read files
           run: 
             echo "welcome to my first gh-job"
             ls -ltr
             cat README.md
+        - name: Generate ASCII Artwork
+          run: cowsay -f dragon "This is Jagadeesh Urivinty-DevOps"
