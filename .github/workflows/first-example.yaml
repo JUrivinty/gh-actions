@@ -11,6 +11,5 @@ jobs:
         - name: List and read files
           run: 
             echo "welcome to my first gh-job"
-            echo "Testing workflow"
             ls -ltr
             cat README.md
