@@ -15,4 +15,4 @@ jobs:
              ls -ltra
 
         - name: Executing Shell Script
-          run: bash ascii-s.sh
+          run: bash .github/workflows/ascii-s.sh
