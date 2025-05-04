@@ -15,7 +15,7 @@ jobs:
         - name: Execute cowsay CMD
           run: cowsay -f dragon "This is Jagadeesh Urivinty-DevOps" >> dragon.txt
 
-        - name: Test file Exists
+        - name: Test File Exists
           run : grep -i "dragon" dragon.txt
 
         - name: Read File
