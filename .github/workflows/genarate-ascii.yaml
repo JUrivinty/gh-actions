@@ -16,7 +16,7 @@ jobs:
           run: cowsay -f dragon "This is Jagadeesh Urivinty-DevOps" >> dragon.txt
 
         - name: Test File Exists
-          run : grep -i "dragon" dragon.txt
+          run : grep -i "DevOps" dragon.txt
 
         - name: Read File
           run: cat dragon.txt
